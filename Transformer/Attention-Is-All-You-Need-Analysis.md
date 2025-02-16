@@ -410,8 +410,9 @@ Self-attention has a complexity of $O(n^2 \cdot d)$ but is faster than recurrent
   - The learning rate **increases linearly** for the first **4,000 warm-up steps**.
   - After warm-up, it **decreases proportionally** to the inverse square root of the step number:
     $$
-    \text{lr} = d_{\text{model}}^{-0.5} \cdot \min(\text{step}^{-0.5}, \text{step} \cdot \text{warmup}^{-1.5})
-    $$
+\text{lr} = d_{\text{model}}^{-0.5} \cdot \min(\text{step}^{-0.5}, \text{step} \cdot \text{warmup}^{-1.5})
+$$
+
 
 ### 4. Regularization Techniques
 - **Residual Dropout**:
